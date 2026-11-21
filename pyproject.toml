@@ -1,0 +1,32 @@
+
+[project]
+name = "ai-project-assistant"
+version = "0.1.0"
+description = "Agentic AI workshop - AI Project Assistant"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # Gemini API and environment configuration
+    "google-genai==3.6.1",
+    "python-dotenv==1.2.4",
+    # Data science and machine learning
+    "numpy",
+    "pandas==3.1.1",
+    "scikit-learn==1.9.1",
+    # LLM and Transformer demonstrations
+    "transformers==5.23.0",
+    "matplotlib==3.11.2",
+    # Knowledge base and RAG
+    "chromadb==1.5.9",
+    # Agent frameworks
+    "langchain==1.5.2",
+    "langchain-google-genai==4.5.0",
+    "langgraph==1.2.23",
+    # LLM observability
+    "langfuse==5.2.0",
+    # Final application
+    "streamlit==1.67.0",
+    "torch>=2.15.0",
+]
+
+[tool.uv]
+package = false
